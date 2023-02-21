@@ -14,7 +14,7 @@ net.bridge.bridge-nf-call-ip6tables = 1
 EOF
 
 sudo sysctl --system
-sudo apt-get update && sudo apt-get install -y containerd.io
+sudo apt-get update && sudo apt-get install -y containerd
 sudo mkdir -p /etc/containerd
 sudo containerd config default | sudo tee /etc/containerd/config.toml
 sudo systemctl restart containerd
